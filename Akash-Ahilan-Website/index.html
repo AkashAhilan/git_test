@@ -6,29 +6,31 @@
     </head>
     <body>
         <h1>Akash Ahilan - Homepage</h1>
-        <!-- To use a link add the a elemnt and put the value of href with a link inside it -->
-        <a href="https://github.com/AkashAhilan/git_test/blob/main/html-boilerplate/index.html" target="_blank" rel="noopener"><h2>About Me</h2></a>
+        <!-- To use a link add the a element and put the value of href with a link inside it -->
+        <a href="https://github.com/AkashAhilan/git_test/blob/main/html-boilerplate/index.html" target="_blank" rel="noopener"><h2>Github</h2></a>
+        <a href="https://www.linkedin.com/in/akashahilan/" target="_blank" rel="noopener"><h2>linkedin</h2></a>
         <!-- fixing the most annoying thing in the world
              when you click a tab opening a new tab in the a element after the href value add the attribute target
              by default the value is _ self for new page put _blank 
         -->
 
-        <!-- attribute rel=  is the noopener value prevents the opened link acess to the webpage from which it was opened -->
+        <!-- attribute rel=  is the noopener value prevents the opened link access to the webpage from which it was opened -->
         <!-- rel="noopener noreferrer" for security for blank pages noreferrer prevents the opened link from knowing which resource has the link -->
-        <body>
+        
             <h1>Homepage</h1>
-            <a href="https://www.theodinproject.com/about">About The Odin Project</a>
-          
-            <a href="about.html">About</a>
-          </body>
-          
+            <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener">About The Odin Project</a>
+          <!-- ./ is goodUse this while referencing a sub webpage also don't put the / in front then it will assume it is a subpage -->
+            <a href="./pages/about.html" target="_blank">About</a>
+         
+          <!-- remember absolute links vs local links -->
        
-        <h3>Shopping List for my Favourite Foods</h3>
+        <h3>Shopping List for my Favorite Foods</h3>
         <ul>
             <li>Pizza</li>
             <li>Burrata cheese</li>
-            <li>San Marzano tomato sause</li>
+            <li>San marzano tomato sauce</li>
             <li>Basil</li>
+            <a href="./mochi.html" target="_blank" rel="noopener"><li>Mochi</li></a>
         </ul>
 
         <!-- ol is the ordered list ul is unordered -->
@@ -38,22 +40,26 @@
                 <li>Go to the gym</li>
                 <li>Watch UFC 303</li>
                 <li>Watch CS350</li>
+                
             </ol>
 
-        <h3>List of Place of Visit</h3>
+        <h3>Dream Places to Visit</h3>
             <ul>
                 <li>Hawaii</li>
-                <li>Newyork penthouse</li>
+                <li>New york penthouse</li>
                 <li>California</li>
             </ul>
 
-        <h3>Top 3 Favourite Movies</h3>
+        <h3>Top 3 Favorite Movies</h3>
             <ol>
                 <li>Ford Vs Ferrari</li>
                 <li>Good Will Hunting</li>
                 <li>The Dark Night</li>
             </ol>
-
+        
+        <!-- you always do this the attribute for images is src not scr -->
+        <img src="images/akash.jpg" alt="Picture of Akash Ahilan" height="310" width="310">
 
         <footer>Created by Akash Ahilan</footer>
     </body>
+</html>
